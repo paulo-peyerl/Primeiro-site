@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-um: #000000;
+    --cor-dois: #f6f6f6;
+    --cor-tres: #22D4FD;
+    --fonte-um: 'krona one', sans-serif;
+    --fonte-dois: 'montserrat', sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-um);
+    color:var(--cor-dois);
+}
+
+.cabecalho{
+    padding: 2% 0 0 10%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 5rem;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--fonte-dois);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-tres);
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover{
+    color: #22d5fd8c;
+}
+
+.conteudo{
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.conteudo__first{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.titulo{
+    font-size: 3rem;
+    font-family: var(--fonte-um);
+    font-weight: 600;
+}
+
+.titulo-destaque{
+    color: var(--cor-tres)
+}
+
+.texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-dois);
+    font-weight: 400;
+}
+
+.texto-destaque__link{
+    color: #ffff52;
+    text-decoration: none;
+}
+
+.texto-destaque__link:hover{
+    color: #ffffdf;
+}
+
+.texto-destaque{
+    color: #ffff52;
+}
+
+.subtitulo{
+    font-family: var(--fonte-um);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.botoes__estilo{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding: 1.375rem 0;
+    text-decoration: none;
+    color: var(--cor-dois);
+    font-family: var(--fonte-dois);
+    font-weight: 600;
+    border: 0.1875rem inset var(--cor-tres);
+    gap: 0.5rem;
+}
+
+.botoes__estilo:hover{
+    border: 0.1875rem outset var(--cor-tres);
+}
+
+.minha-imagem{
+    width: 30%;
+    border: 0.125rem dashed var(--cor-tres);
+    padding: 0.3125rem;
+    font-family: var(--fonte-dois);
+}
+
+.rodape{
+    font-family: var(--fonte-dois);
+    font-size: 1.5rem;
+    color: var(--cor-um);
+    background-color: var(--cor-tres);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+@media (max-width: 1200px){
+    
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .conteudo{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .conteudo__first{
+        width: auto;
+    }
+}
